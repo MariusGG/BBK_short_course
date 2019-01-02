@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Diabetes Risk Assessment Tool </title>
+    <link rel="stylesheet" type="text/css" href="diabetestool.css">
+
+</head>
+
+<body>
+    <h1 id="pageheading">Zedland Health Authority <br> Diabetes Risk Assessment Tool</h1>
+    <main>
+        <form id="risk-assessment">
+
+
+            <fieldset class="age">
+                <legend>How old are you?</legend>
+
+                <ul>
+                    <li class="answers">
+                        <label>1-25</label>
+                        <input type="radio" name="age" value="0" checked="checked">
+                    </li>
+                    <li class="answers">
+                        <label>26-40</label>
+                        <input type="radio" name="age" value="5">
+                    </li>
+                    <li class="answers">
+                        <label>41-60</label>
+                        <input type="radio" name="age" value="8">
+                    </li>
+                    <li class="answers">
+                        <label>60+</label>
+                        <input type="radio" name="age" value="10">
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset class="bmi">
+
+                <legend>What is your BMI?</legend>
+                <ul>
+                    <li class="answers">
+                        <label>0-25</label>
+                        <input type="radio" name="bmi" value="0" checked="checked">
+                    </li>
+                    <li class="answers">
+                        <label>26-30</label>
+                        <input type="radio" name="bmi" value="0">
+                    </li>
+                    <li class="answers">
+                        <label>31-35</label>
+                        <input type="radio" name="bmi" value="9">
+                    </li>
+                    <li class="answers">
+                        <label>35+</label>
+                        <input type="radio" name="bmi" value="10">
+                        <br>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset class="family">
+
+                <legend>Does anybody in your family have diabetes?</legend>
+
+                <ul>
+                    <li class="answers">
+                        <label>No</label>
+                        <input type="radio" name="family" value="0" checked="checked">
+                    </li>
+                    <li class="answers">
+                        <label>Grandparent</label>
+                        <input type="radio" name="family" value="7">
+                    </li>
+                    <li class="answers">
+                        <label>Sibling</label>
+                        <input type="radio" name="family" value="15">
+                    </li>
+                    <li class="answers">
+                        <label>Parent</label>
+                        <input type="radio" name="family" value="15">
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset class="diet">
+
+                <legend>How would you describe your diet?</legend>
+
+                <ul>
+                    <li class="answers">
+                        <label>Low sugar</label>
+                        <input type="radio" name="diet" value="0" checked="checked">
+                    </li>
+                    <li class="answers">
+                        <label> Normal sugar </label>
+                        <input type="radio" name="diet" value="0">
+                    </li>
+                    <li class="answers">
+                        <label>Quite high sugar</label>
+                        <input type="radio" name="diet" value="7">
+                    </li>
+                    <li class="answers">
+                        <label>High sugar</label>
+                        <input type="radio" name="diet" value="10">
+                    </li>
+                </ul>
+            </fieldset>
+
+
+            <div class="question">
+
+                <input id="submit" type="submit" value="Calculation">
+
+            </div>
+
+
+        </form>
+    </main>
+    <aside>
+
+        <fieldset id="display-message"></fieldset>
+
+    </aside>
+     <script src="diabetestool.js"></script>
+</body>
+
+</html>

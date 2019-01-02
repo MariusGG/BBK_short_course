@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Zedland Health Authority contact form</title>
+    <link rel="stylesheet" type="text/css" href="contactform_jq.css">
+
+</head>
+
+<body>
+    <header>
+        <h1 id="pageheading">Zedland Health Authority contact form</h1>
+    </header>
+    <main>
+        <form id="contactForm">
+            <fieldset id="input-fields">
+                <fieldset class="fristName">
+
+                    <label for="firstName" class="informations"> First Name:</label>
+
+                    <input id="firstName" name="firstName" type="text" size="33">
+                </fieldset>
+                <fieldset class="lastName">
+
+                    <label for="lastName" class="informations"> Last Name:</label>
+
+                    <input name="lastName" type="text" size="33" id="lastName">
+                </fieldset>
+                <fieldset class="title">
+                    <label class="informations">
+                        Title:
+                    </label>
+                    <select name="title">
+                    <option value="">select a title.</option>
+                    <option value="Mr.">Mr.</option>
+                    <option value="Ms.">Ms.</option>
+                    <option value="Mrs.">Mrs.</option>
+                    <option value="Miss">Miss</option>
+                </select>
+                </fieldset>
+                <fieldset class="healthAutorityNumber">
+                    <div class="informations">
+                        <label for="hint"> Health Authority Number:</label><span><img src="question.png" id="qmark" alt="Hint"></span>
+                    </div>
+                    <input name="hint" type="text" size="33" id="hint">
+                    <div class="qmark-tip" id="qmarktip">If you do not know your ZHA number, please contact your GP</div>
+                </fieldset>
+                <fieldset class="email">
+
+                    <label for="email" class="informations">Email:</label>
+
+                    <input name="email" type="email" size="33" id="email">
+                </fieldset>
+                <fieldset class="telephoneNumber">
+
+                    <label for="telephoneNumber" class="informations"> Telephone Number:</label>
+
+                    <input name="telephoneNumber" type="text" size="33" id="telephoneNumber">
+                </fieldset>
+                <fieldset class="informations">
+                    <input type="submit" value="submit" id="submit">
+                </fieldset>
+
+            </fieldset>
+        </form>
+    </main>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="jquery.validate.min.js"></script>
+    <script src="contactform_jq.js"></script>
+</body>
+
+</html>

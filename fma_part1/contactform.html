@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zedland Health Authority contact form</title>
+    <link rel="stylesheet" type="text/css" href="diabetestool.css">
+    
+</head>
+
+<body>
+    <div class="container"></div>
+    <header>
+        <h1 id="heading">Zedland Health Authority contact form</h1>
+    </header>
+    <main>
+        <img id="top" src="top.png" alt="">
+        <form id="contactForm">
+            <fieldset id="contact-details">
+                <fieldset class="firstName pad">
+                    <label class="informations">
+                        First Name:
+                    </label>
+                    <input id="firstName" type="text" size="33"><span id="firstNameValidationError" class="validationError"></span><span id="firstNameError" class="error">*You must enter your first name.</span></fieldset>
+                <fieldset class="lastName pad">
+                    <label class="informations">
+                        Last Name:
+                    </label>
+                    <input id="lastName" type="text" size="33"><span id="lastNameValidationError" class="validationError"></span><span id="lastNameError" class="error">* You must enter your last name.</span>
+                </fieldset>
+                <fieldset class="title pad">
+                    <label class="informations">
+                        Title:
+                    </label>
+                    <select id="title">
+                    <option selected="selected" value="select a title">select a title.</option>
+                    <option value="Mr.">Mr.</option>
+                    <option value="Ms.">Ms.</option>
+                    <option value="Mrs.">Mrs.</option>
+                    <option value="Miss">Miss</option>
+                </select><span id="titleError" class="error">* You must select a title.</span>
+                </fieldset>
+                <fieldset class="healthAutorityNumber pad">
+                    <label class="informations">
+                        Health Authority Number: <span><img src="question.png" id="question-mark" alt="Hint"></span>
+                    </label>
+                    <input id="con" type="text" size="33"><span id="conValidationError" class="validationError"></span><span id="conError" class="error">* Please enter your health authority number. (e.g ZHA346783)</span>
+                    <div class="qmark-tip" id="qmarktip">If you do not know your ZHA number, please contact your GP</div>
+                </fieldset>
+                <fieldset class="email pad">
+                    <label class="informations">
+                        Email:
+                    </label>
+                    <input id="email" type="text" size="33"><span id="emailValidationError" class="validationError"></span><span id="emailError" class="error">* You must enter your email address.</span>
+                </fieldset>
+                <fieldset class="telephoneNumber pad">
+                    <label class="informations">
+                        Telephone Number:
+                    </label>
+                    <input id="telephoneNumber" type="text" size="33"><span id="telephoneNumberValidationError" class="validationError"></span><span id="telephoneNumberError" class="error">* You must enter your telephone number.</span>
+                </fieldset>
+                <div class="informations pad">
+                    <input type="submit" value="submit">
+                </div>
+            </fieldset>
+        </form>
+        <img id="bottom" src="bottom.png" alt="">
+    </main>
+    </div>
+    <script src="contactform.js"></script>
+</body>
+
+</html>
